@@ -46,14 +46,12 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Install FFmpeg
+      - name: Install dependencies
         run: |
           sudo apt-get update
           sudo apt-get install -y ffmpeg
-
-      - name: Install Python dependencies
-        run: |
-          pip install -r requirements.txt
+          python -m pip install --upgrade pip setuptools wheel
+          if [ -f requirements.txt ]; then python -m pip install --no-cache-dir -r requirements.txt; fi
 
       - name: Setup YouTube credentials
         run: |
