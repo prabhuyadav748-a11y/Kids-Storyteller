@@ -1,0 +1,13 @@
+# Placeholder for kids-story-generator.yml
+# Original file path: C:\Users\Prabhu Yadav\Downloads\kids-story-generator.yml
+# Replace the contents below with the actual YAML from the original file.
+
+# Example placeholder configuration:
+service: kids-story-generator
+version: "1.0"
+settings:
+  language: en
+  max_length: 800
+  voice: neutral
+
+# End of placeholder
